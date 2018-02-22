@@ -1,5 +1,10 @@
+.DS_Store
 error
 test
 static/*
 themes/*
+themes/@Style_Bootstarp_for_MT/templates
 !themes/@Style_Bootstarp_for_MT
+themes/@Style_Bootstarp_for_MT/.DS_Store
+themes/@Style_Bootstarp_for_MT/bootstrap-3.3.7/*
+!themes/@Style_Bootstarp_for_MT/bootstrap-3.3.7/less
