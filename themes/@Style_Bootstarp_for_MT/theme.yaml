@@ -52,10 +52,6 @@ elements:
             label: メインページ
             outfile: index.html
             rebuild_me: 1
-          blog_css:
-            label: blog_css
-            outfile: css/blog.css
-            rebuild_me: 1
           bootstrap_min_css:
             label: bootstrap_min_css
             outfile: css/bootstrap.min.css
@@ -171,4 +167,3 @@ elements:
               - アイテム
               - 月別アーカイブ
               - 検索
-
