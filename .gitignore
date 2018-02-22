@@ -1,6 +1,9 @@
 .DS_Store
 error
 test
+node_modules
+package-lock.json
+package.json
 static/*
 themes/*
 themes/@Style_Bootstarp_for_MT/templates
