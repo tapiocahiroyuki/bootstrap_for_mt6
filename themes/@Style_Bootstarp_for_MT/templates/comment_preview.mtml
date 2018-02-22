@@ -1,6 +1,9 @@
 <mt:SetVarBlock name="page_title">プレビュー - <$mt:BlogName encode_html="1"$></mt:SetVarBlock>
-<mt:Unless regex_replace="/\s*\n+/g","\n">
-<!DOCTYPE html>
+<$mt:Var name="regex_return[0]" value='/\s*\n+/g'$>
+<$mt:Var name="regex_return[1]" value="\n"$>
+<mt:setVarBlock name="regex_relative[0]">/https?://<$MTCGIHost$>/g</mt:setVarBlock>
+<$mt:Var name="regex_relative[1]" value=""$>
+<mt:Unless regex_replace="$regex_return" regex_replace="$regex_relative"><!DOCTYPE html>
 <html lang="<$mt:BlogLanguage$>">
 <head>
 
