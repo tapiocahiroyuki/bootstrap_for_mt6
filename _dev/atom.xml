@@ -4,8 +4,632 @@
     <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/" />
     <link rel="self" type="application/atom+xml" href="https://tapioca-puda.movabletype.biz/_dev/atom.xml" />
     <id>tag:tapioca-puda.movabletype.biz,2018-02-22:/_dev//11</id>
-    <updated></updated>
+    <updated>2018-02-26T15:15:13Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro 6.3.7</generator>
+
+<entry>
+    <title>ボタンのトグル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000559" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.559</id>
+
+    <published>2018-02-26T15:12:47Z</published>
+    <updated>2018-02-26T15:15:13Z</updated>
+
+    <summary>ボタンを押すと、へこんだ外観になり、もう一度押すと、戻に戻ります。.activeとaria-pressed属性をtrueにすると押されたままが初期状態になります。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="ボタン" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
+
+<button type="button" class="btn btn-primary active" data-toggle="button" aria-pressed="true" autocomplete="off">
+  Single toggle
+</button>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>閉じることができるアラート</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000558" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.558</id>
+
+    <published>2018-02-26T15:04:09Z</published>
+    <updated>2018-02-26T15:07:48Z</updated>
+
+    <summary>閉じるボタンのあるアラート。button要素に.closeを付与することで、閉じるボタンになります。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="アラート" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good. </div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>ポップオーバー</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000557" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.557</id>
+
+    <published>2018-02-26T14:56:22Z</published>
+    <updated>2018-02-26T15:03:06Z</updated>
+
+    <summary>クリックすると吹き出しが表示されます。スクリプトを実装する必要があります。data-placement属性で吹き出しの出る方向を指示できます。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on left
+</button>
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+<!-- Bootstrap・jQuery読み込み後に実行が必要なScript -->
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>ツールチップ</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000556" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.556</id>
+
+    <published>2018-02-26T14:51:25Z</published>
+    <updated>2018-02-26T14:55:40Z</updated>
+
+    <summary>jQuery・bootstrap読み込み後にツールチップ用のスクリプトを実行させ、data-toggle属性にtooltipを、titleにテキストを記載することで、マウスをかざすと吹き出しが表示されるようになります。data-placementで吹き出しの出る方向を指示できます。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="left">Hover over me</a>
+
+<!-- jQuery・bootstrap読み込み後に実行が必要なスクリプト -->
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>スクロールスパイ</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000555" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.555</id>
+
+    <published>2018-02-26T14:37:30Z</published>
+    <updated>2018-02-26T14:46:56Z</updated>
+
+    <summary>ナビバー実装例。ナビバーで示すhref要素のidにスクロールが移動すると同時に、スクロールの位置がidの示す場所ではナビバーの項目がハイライトします。スクロール対象エリアにはposition:relativeのスタイルを設定してください。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<nav class="navbar navbar-default navbar-static" id="navbar-example2">
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="#" class="navbar-brand">Project Name</a>
+</div>
+<div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+<ul class="nav navbar-nav">
+<li><a href="#fat">@fat</a></li>
+<li><a href="#mdo">@mdo</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" id="navbarDrop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+<ul class="dropdown-menu" aria-labelledby="navbarDrop1">
+<li><a href="#one">one</a></li>
+<li><a href="#two">two</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#three">three</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0" style="position: relative;height: 200px;margin-top: 10px;overflow: auto;">
+<h4 id="fat" style="">@fat</h4>
+<p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+<h4 id="mdo" style="">@mdo</h4>
+<p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+<h4 id="one" style="">one</h4>
+<p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+<h4 id="two" style="">two</h4>
+<p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+<h4 id="three" style="">three</h4>
+<p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+<p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats. </p>
+</div>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>ドロップダウンの操作</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000554" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.554</id>
+
+    <published>2018-02-26T13:18:00Z</published>
+    <updated>2018-02-26T14:36:36Z</updated>
+
+    <summary>.dropdownに.openを付与することで、ドロップダウンが開いたままになります。jQueryなどで開閉を制御できます。リンクにはdata-toggle=&quot;dropdown&quot;をつけてください。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<div class="dropdown open">
+<a id="dLabel" href="http://example.com" data-toggle="dropdown" role="button" data-target="#" aria-haspopup="true" aria-expanded="false">
+Dropdown trigger
+<span class="caret"></span>
+</a>
+
+<ul class="dropdown-menu" aria-labelledby="dLabel">
+<li><a href="#">湘南新宿ライン</a></li>
+<li><a href="#">埼京線</a></li>
+<li><a href="#">山手線</a></li>
+</ul>
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>押したボタンによって内容が差し替わるモーダル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000553" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.553</id>
+
+    <published>2018-02-26T13:05:15Z</published>
+    <updated>2018-02-26T13:16:22Z</updated>
+
+    <summary>jQueryによりモーダルの中身を差し替えます。ここでは.data-whatever属性の値をモーダルのinput要素に書き込んで表示させます。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="だるい">モーダルいの...</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="シフト">モーダルシフト</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="ヨガファイア">モーダルシム</button>
+
+
+<!-- Modal -->
+<div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">内容が変化するモーダル</h4>
+</div>
+<div class="modal-body">
+<input type="text" class="form-control" id="recipient-name">
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">閉める</button>
+<button type="button" class="btn btn-primary">セーブ</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Script （jQueryとbootstrapの後に読み込ませていないのでここでは動作しません）-->
+<script type="text/javascript">
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>フェードしないモーダル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000552" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.552</id>
+
+    <published>2018-02-26T12:58:15Z</published>
+    <updated>2018-02-26T12:59:38Z</updated>
+
+    <summary>フェードしないモーダル。div.modalについている.fadeを取り除きます。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalInstant">
+一瞬で表示されるモーダル
+</button>
+
+<!-- Modal -->
+<div class="modal" id="myModalInstant" tabindex="-1" role="dialog" aria-labelledby="myModalLabelInstant">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabelInstant">モーダル#myModalInstant</h4>
+</div>
+<div class="modal-body">
+モーダルいの...
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">閉める</button>
+<button type="button" class="btn btn-primary">セーブ</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>小モーダル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000551" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.551</id>
+
+    <published>2018-02-26T12:54:01Z</published>
+    <updated>2018-02-26T12:55:55Z</updated>
+
+    <summary>.modal-dialogに .modal-smを付与すると、小さなモーダルになります。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModalSmall">
+小モーダル
+</button>
+
+<!-- Modal -->
+<div id="myModalSmall" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">モーダル#myModalSmall</h4>
+</div>
+<div class="modal-body">
+モーダルいの...
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">閉める</button>
+<button type="button" class="btn btn-primary">セーブ</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>大モーダル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000550" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.550</id>
+
+    <published>2018-02-26T12:49:14Z</published>
+    <updated>2018-02-26T12:54:49Z</updated>
+
+    <summary>.modal-dialogに .modal-lgを付与すると、大きなモーダルになります。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalLarge">
+大モーダル
+</button>
+
+<!-- Modal -->
+<div id="myModalLarge" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">モーダル#myModalLarge</h4>
+</div>
+<div class="modal-body">
+モーダルいの...
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">閉める</button>
+<button type="button" class="btn btn-primary">セーブ</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>モーダル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/jquery/#000549" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.549</id>
+
+    <published>2018-02-26T12:43:09Z</published>
+    <updated>2018-02-26T12:47:16Z</updated>
+
+    <summary>モーダルを実装するには、モーダルのidとボタンのdata-targetを等しくします。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="jQuery" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+モーダルのトリガーボタン
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">モーダル#myModal</h4>
+</div>
+<div class="modal-body">
+モーダルいの...
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">閉める</button>
+<button type="button" class="btn btn-primary">セーブ</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Well</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/panel/#000548" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.548</id>
+
+    <published>2018-02-26T12:34:51Z</published>
+    <updated>2018-02-26T12:39:26Z</updated>
+
+    <summary>内側にへこんだボックスを配置できます。.well-lg または.well-smを追加して、余白の大きさを調整します。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="パネル" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<div class="well">
+見て！　私は井土ヶ谷にいます。
+</div>
+
+<div class="well well-lg">
+見て！　私は井土ヶ谷にいます。
+</div>
+
+<div class="well well-sm">
+見て！　私は井土ヶ谷にいます。
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>iframeが埋め込まれたパネル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/panel/#000547" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.547</id>
+
+    <published>2018-02-26T12:30:44Z</published>
+    <updated>2018-02-26T12:34:48Z</updated>
+
+    <summary>レスポンシブ対応の埋め込みパネルです。埋め込む要素に.embed-responsive-itemを付与します。frameborder=&quot;0&quot;はいりません。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="パネル" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<h4>16:9</h4>
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5160.998265826476!2d139.69561913716956!3d35.656092208974265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1519648163289" style="border:0" allowfullscreen></iframe>
+</div>
+
+<h4>4:3</h4>
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5160.998265826476!2d139.69561913716956!3d35.656092208974265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1519648163289" style="border:0" allowfullscreen></iframe>
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>リストグループ入りパネル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/panel/#000546" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.546</id>
+
+    <published>2018-02-26T12:27:30Z</published>
+    <updated>2018-02-26T12:30:33Z</updated>
+
+    <summary>テーブルの代わりにリストグループの入ったパネル。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="パネル" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="リストグループ" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">パネルの見出し</div>
+<div class="panel-body">
+<p>いくつかのデフォルトパネルコンテンツがここにあります。</p>
+</div>
+
+<!-- List Group -->
+<div class="list-group">
+<a href="#" class="list-group-item disabled">桜木町
+<a href="#" class="list-group-item disabled">高島町
+<a href="#" class="list-group-item active">横浜</a>
+<a href="#" class="list-group-item">反町</a>
+<a href="#" class="list-group-item">東白楽</a>
+</div>
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>テーブル入りパネル</title>
+    <link rel="alternate" type="text/html" href="https://tapioca-puda.movabletype.biz/_dev/bootstrap/panel/#000545" />
+    <id>tag:tapioca-puda.movabletype.biz,2018:/_dev//11.545</id>
+
+    <published>2018-02-26T12:23:49Z</published>
+    <updated>2018-02-26T12:26:07Z</updated>
+
+    <summary>パネルのデザインになじんだテーブルになります。</summary>
+    <author>
+        <name>竹岡 浩之</name>
+        
+    </author>
+    
+        <category term="パネル" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://tapioca-puda.movabletype.biz/_dev/">
+        <![CDATA[<div class="panel panel-default">
+<!-- Default panel contents -->
+<div class="panel-heading">パネルの見出し</div>
+<div class="panel-body">
+<p>いくつかのデフォルトパネルコンテンツがここにあります。</p>
+</div>
+
+<!-- Table -->
+<table class="table">
+<caption>キャプション</caption>
+<thead>
+<tr>
+<th>発車順</th>
+<th>種別</th>
+<th>行先</th>
+<th>発車時刻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">先発</th>
+<td>特急</td>
+<td>森林公園</td>
+<td>16:34</td>
+</tr>
+<tr>
+<th scope="row">次発</th>
+<td>各停</td>
+<td>渋谷</td>
+<td>16:36</td>
+</tr>
+<tr>
+<th scope="row">次々発</th>
+<td>急行</td>
+<td>小手指</td>
+<td>16:42</td>
+</tr>
+</tbody>
+</table>
+</div>]]>
+        
+    </content>
+</entry>
 
 </feed>
