@@ -48,7 +48,7 @@ gulp.task('minify-css', function() {
 // Copy CSS to RedMagic_dev.
 gulp.task('copy', function() {
     return gulp.src('./themes/@Style_Bootstarp_for_MT/bootstrap-3.3.7/dist/css/bootstrap.min.css')
-        .pipe(gulp.dest('_dev/css'));
+        .pipe(gulp.dest('./static/_dev/css'));
 });
 
 // Copy CSS as template.
