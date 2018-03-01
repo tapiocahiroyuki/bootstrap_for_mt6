@@ -8,7 +8,10 @@
 // Set the container width, and override it for fixed navbars in media queries.
 
 .container {
-  .container-fixed();
+  .container-fixed(@grid-gutter-width-small);
+  @media (min-width: @screen-md-min) {
+    .container-fixed();
+  }
 
   @media (min-width: @screen-sm-min) {
     width: @container-sm;
@@ -28,7 +31,10 @@
 // width for fluid, full width layouts.
 
 .container-fluid {
-  .container-fixed();
+  .container-fixed(@grid-gutter-width-small);
+  @media (min-width: @screen-md-min) {
+    .container-fixed();
+  }
 }
 
 
@@ -37,7 +43,10 @@
 // Rows contain and clear the floats of your columns.
 
 .row {
-  .make-row();
+  .make-row(@grid-gutter-width-small);
+  @media (min-width: @screen-md-min) {
+    .make-row();
+  }
 }
 
 

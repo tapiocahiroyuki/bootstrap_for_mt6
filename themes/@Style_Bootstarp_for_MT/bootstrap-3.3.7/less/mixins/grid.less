@@ -19,7 +19,7 @@
 }
 
 // Generate the extra small columns
-.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+.make-xs-column(@columns; @gutter: @grid-gutter-width-small) {
   position: relative;
   float: left;
   width: percentage((@columns / @grid-columns));
@@ -38,7 +38,7 @@
 }
 
 // Generate the small columns
-.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+.make-sm-column(@columns; @gutter: @grid-gutter-width-small) {
   position: relative;
   min-height: 1px;
   padding-left:  (@gutter / 2);

@@ -569,7 +569,10 @@ input[type="checkbox"] {
 
   // Make form groups behave like rows
   .form-group {
-    .make-row();
+    .make-row(@grid-gutter-width-small);
+    @media (min-width: @screen-sm-min) {
+      .make-row();
+    }
   }
 
   // Reset spacing and right align labels, but scope to media queries so that
@@ -587,7 +590,10 @@ input[type="checkbox"] {
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
-    right: floor((@grid-gutter-width / 2));
+    right: floor((@grid-gutter-width-small / 2));
+        @media (min-width: @screen-md-min) {
+          right: floor((@grid-gutter-width / 2));
+        }
   }
 
   // Form group sizes
