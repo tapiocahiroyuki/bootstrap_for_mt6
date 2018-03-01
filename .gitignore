@@ -5,6 +5,7 @@ node_modules
 package-lock.json
 package.json
 static/*
+!static/_dev
 themes/*
 themes/@Style_Bootstarp_for_MT/templates
 !themes/@Style_Bootstarp_for_MT
