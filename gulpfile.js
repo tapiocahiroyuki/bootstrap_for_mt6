@@ -1,4 +1,4 @@
-// gulpfile -- for Red Magic Systems --
+// gulpfile -- for Red Magic Systems_dev--
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
@@ -19,7 +19,7 @@ gulp.task('serve', function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "."
+            baseDir: "./static"
         }
     });
 
@@ -45,10 +45,10 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('./themes/@Style_Bootstarp_for_MT/bootstrap-3.3.7/dist/css/'))
 });
 
-// Copy CSS to portofolio.
+// Copy CSS to RedMagic_dev.
 gulp.task('copy', function() {
     return gulp.src('./themes/@Style_Bootstarp_for_MT/bootstrap-3.3.7/dist/css/bootstrap.min.css')
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('_dev/css'));
 });
 
 // Copy CSS as template.
