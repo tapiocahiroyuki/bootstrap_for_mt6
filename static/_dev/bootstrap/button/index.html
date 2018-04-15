@@ -7,6 +7,7 @@
 <meta name="description" content="ボタン ">
 <link rel="stylesheet" href="/_dev/css/bootstrap.min.css">
 <link rel="stylesheet" href="/_dev/css/custom_for_mt.css">
+<link rel="stylesheet" href="/_dev/hljs/styles/atom-one-dark.css">
 <link rel="start" href="/_dev/" title="Home">
 <link rel="alternate" href="/_dev/atom.xml" type="application/atom+xml" title="Recent Entries">
 <link rel="canonical" href="/_dev/bootstrap/button/">
@@ -52,6 +53,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ボタンを押すと、へこんだ外観になり、もう一度押すと、戻に戻ります。.activeとaria-pressed属性をtrueにすると押されたままが初期状態になります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
   Single toggle
@@ -59,6 +61,18 @@
 <button type="button" class="btn btn-primary active" data-toggle="button" aria-pressed="true" autocomplete="off">
   Single toggle
 </button>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
+  Single toggle
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;true&quot; autocomplete=&quot;off&quot;&gt;
+  Single toggle
+&lt;/button&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-491" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -70,6 +84,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ドロップアップにも変更可能です。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group dropup">
 <button type="button" class="btn btn-default">Dropup</button>
@@ -84,6 +99,24 @@
 </ul>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group dropup&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Dropup&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-490" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/dropdown/#000490" rel="bookmark">ボタンドロップダウンのサイズ</a></h2>
@@ -94,6 +127,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/dropdown/">ドロップダウン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ボタンの大きさを変更できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <!-- Large button group -->
 <div class="btn-group">
@@ -126,6 +160,42 @@
 </ul>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;!-- Large button group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button class=&quot;btn btn-default btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;大泉学園&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;石神井公園&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;練馬高野台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;富士見台&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- Small button group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button class=&quot;btn btn-default btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;中村橋&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;練馬&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;桜台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;江古田&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- Extra small button group --&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button class=&quot;btn btn-default btn-xs dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;小平&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;花小金井&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;田無&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;西武柳沢&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-489" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/dropdown/#000489" rel="bookmark">分離式ドロップダウン</a></h2>
@@ -136,6 +206,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/dropdown/">ドロップダウン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">分割ボタンのドロップダウンを作成します。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group">
 <button type="button" class="btn btn-default">Action</button>
@@ -222,6 +293,96 @@
 </ul>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-488" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/button/#000488" rel="bookmark">ボタンドロップダウン</a></h2>
@@ -232,6 +393,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ドロップダウンのバリエーションです。.btn-defaultを.btn-dangerなどに変更します。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group">
 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
@@ -294,6 +456,72 @@
 </ul>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-487" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/button/#000487" rel="bookmark">ジャスティファイ</a></h2>
@@ -304,6 +532,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.btn-group-justifiedにより、ジャスティファイされたボタングループです。ボタンは.btn-groupの要素で囲んでください。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
 <div class="btn-group" role="group" aria-label="toyoko">
@@ -325,6 +554,31 @@
 </div>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group btn-group-justified&quot; role=&quot;group&quot; aria-label=&quot;...&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;toyoko&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急東横線&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;denentoshi&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急田園都市線&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;3ボタン&quot;&gt;
+&lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu7&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;京王井の頭線
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu7&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;吉祥寺&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;井の頭公園&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;三鷹台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;久我山&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-486" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/button/#000486" rel="bookmark">縦並びのボタン</a></h2>
@@ -335,6 +589,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.btn-group-verticalによる縦並びのボタングループです。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group-vertical" role="group" aria-label="縦メニュー">
 <div class="btn-group" role="group" aria-label="toyoko">
@@ -356,6 +611,31 @@
 </div>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;縦メニュー&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;toyoko&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急東横線&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;denentoshi&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急田園都市線&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;inokashira&quot;&gt;
+&lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu6&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;京王井の頭線
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu6&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;吉祥寺&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;井の頭公園&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;三鷹台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;久我山&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-485" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/button/#000485" rel="bookmark">ネスト</a></h2>
@@ -366,6 +646,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ボタングループにドロップダウンメニューをつけることができます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group" role="group" aria-label="button group">
 <button type="button" class="btn btn-default">東急東横線</button>
@@ -383,6 +664,27 @@
 </div>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;button group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急東横線&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急田園都市線&lt;/button&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+&lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu5&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;京王井の頭線
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenu5&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;吉祥寺&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;井の頭公園&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;三鷹台&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;久我山&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-484" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/button/#000484" rel="bookmark">ボタングループの大きさ</a></h2>
@@ -393,6 +695,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.btn-group に .btn-group-xsなどの大きさを示すクラスを付与することで、ボタンの大きさを変更できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-group btn-group-lg" role="group" aria-label="large button group">
 <button type="button" class="btn btn-default">Left</button>
@@ -415,6 +718,32 @@
 <button type="button" class="btn btn-default">Right</button>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;large button group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;normal button group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;small button group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group btn-group-xs&quot; role=&quot;group&quot; aria-label=&quot;extra small button group&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-483" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/button/#000483" rel="bookmark">ツールバー</a></h2>
@@ -425,6 +754,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/button/">ボタン</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.btn-toolbarで複数のボタングループを囲みます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="btn-toolbar" role="toolbar" aria-label="toolbar">
 <div class="btn-group" role="group" aria-label="1st button group">
@@ -447,6 +777,33 @@
 </div>
 </div>
 </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;toolbar&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;1st button group&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;方向ボタン&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;左&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;中&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;右&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;2nd button group&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;方向ボタン&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;左&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;右&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;3rd button group&quot;&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;方向ボタン&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;左&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;右&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <ul class="pager">
@@ -527,7 +884,11 @@
 </ul>
 <p><a href="#top">Back to top</a></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/_dev/js/jquery_min.js"></script>
 <script src="/_dev/js/bootstrap.min.js"></script>
+<script src="/_dev/js/clipboard_min.js"></script>
+<script src="/_dev/js/myscript.js"></script>
+<script type="text/javascript" src="/_dev/hljs/highlight.pack.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

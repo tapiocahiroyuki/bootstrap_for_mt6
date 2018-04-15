@@ -7,6 +7,7 @@
 <meta name="description" content="リストグループ ">
 <link rel="stylesheet" href="/_dev/css/bootstrap.min.css">
 <link rel="stylesheet" href="/_dev/css/custom_for_mt.css">
+<link rel="stylesheet" href="/_dev/hljs/styles/atom-one-dark.css">
 <link rel="start" href="/_dev/" title="Home">
 <link rel="alternate" href="/_dev/atom.xml" type="application/atom+xml" title="Recent Entries">
 <link rel="canonical" href="/_dev/bootstrap/listgroup/">
@@ -52,6 +53,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/panel/">パネル</a></li>
 </ul>
 </footer>
+<div class="well well-sm">テーブルの代わりにリストグループの入ったパネル。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="panel panel-default">
 <!-- Default panel contents -->
@@ -69,6 +71,27 @@
 </div>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;panel panel-default&quot;&gt;
+&lt;!-- Default panel contents --&gt;
+&lt;div class=&quot;panel-heading&quot;&gt;パネルの見出し&lt;/div&gt;
+&lt;div class=&quot;panel-body&quot;&gt;
+&lt;p&gt;いくつかのデフォルトパネルコンテンツがここにあります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- List Group --&gt;
+&lt;div class=&quot;list-group&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;桜木町
+&lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;高島町
+&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;横浜&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;反町&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;東白楽&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-540" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/listgroup/#000540" rel="bookmark">カスタムコンテンツ</a></h2>
@@ -79,6 +102,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/listgroup/">リストグループ</a></li>
 </ul>
 </footer>
+<div class="well well-sm">リストグループの中に.list-group-item-headingの入った見出し、.list-group-item-textの入った段落を組み込めます</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="list-group">
 <a href="#" class="list-group-item active">
@@ -95,6 +119,26 @@
 </a>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;list-group&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
+&lt;h3 class=&quot;list-group-item-heading&quot;&gt;渋谷駅&lt;/h3&gt;
+&lt;p class=&quot;list-group-item-text&quot;&gt;多くの路線が乗り入れる駅です&lt;/p&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;
+&lt;h3 class=&quot;list-group-item-heading&quot;&gt;池尻大橋駅&lt;/h3&gt;
+&lt;p class=&quot;list-group-item-text&quot;&gt;大橋ジャンクションの上に公園があります&lt;/p&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;
+&lt;h3 class=&quot;list-group-item-heading&quot;&gt;三軒茶屋駅&lt;/h3&gt;
+&lt;p class=&quot;list-group-item-text&quot;&gt;キャロットタワーがあります&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt; </code>
+</pre>
+</div>
 </article>
 <article id="entry-539" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/listgroup/#000539" rel="bookmark">アクティブ・無効リンク</a></h2>
@@ -105,6 +149,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/listgroup/">リストグループ</a></li>
 </ul>
 </footer>
+<div class="well well-sm">アクティブの場合は.activeクラスを、選択不能の場合は.disabledを追加します。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="list-group">
 <a href="#" class="list-group-item disabled">桜木町</a>
@@ -113,6 +158,19 @@
 <a href="#" class="list-group-item">反町</a>
 <a href="#" class="list-group-item">東白楽</a>
 </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;list-group&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;桜木町&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;高島町&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;横浜&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;反町&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;東白楽&lt;/a&gt;
+&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-538" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -124,6 +182,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/listgroup/">リストグループ</a></li>
 </ul>
 </footer>
+<div class="well well-sm">アラートと同様、.list-group-item-successなどによるカラーバリエーションが可能です。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <ul class="list-group">
 <li class="list-group-item list-group-item-success">快特</li>
@@ -138,6 +197,24 @@
 <a href="#" class="list-group-item list-group-item-danger">特急</a>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;ul class=&quot;list-group&quot;&gt;
+&lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;快特&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;エアポート急行&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;エアポート快特&lt;/li&gt;
+&lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;特急&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;list-group&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-success&quot;&gt;快特&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-info&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;エアポート急行&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-warning&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;エアポート快特&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-danger&quot;&gt;特急&lt;/a&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-537" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/listgroup/#000537" rel="bookmark">リンクのあるリストグループ</a></h2>
@@ -148,6 +225,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/listgroup/">リストグループ</a></li>
 </ul>
 </footer>
+<div class="well well-sm">リストグループがリンク可能である場合、リストでコーディングせず、div要素に直接a要素やbutton要素を入れます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="list-group">
 <a href="#" class="list-group-item active"><span class="badge">21</span>東横線</a>
@@ -160,6 +238,22 @@
 <button href="#" class="list-group-item"><span class="badge">13</span>目黒線</button>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;list-group&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;&lt;span class=&quot;badge&quot;&gt;21&lt;/span&gt;東横線&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;27&lt;/span&gt;田園都市線&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;13&lt;/span&gt;目黒線&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;list-group&quot;&gt;
+&lt;button href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;21&lt;/span&gt;東横線&lt;/button&gt;
+&lt;button href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;27&lt;/span&gt;田園都市線&lt;/button&gt;
+&lt;button href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;13&lt;/span&gt;目黒線&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-536" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/listgroup/#000536" rel="bookmark">バッジ付き</a></h2>
@@ -170,12 +264,24 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/listgroup/">リストグループ</a></li>
 </ul>
 </footer>
+<div class="well well-sm">バッジのついたリストグループです</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <ul class="list-group">
 <li class="list-group-item"><span class="badge">21</span>東横線</li>
 <li class="list-group-item"><span class="badge">27</span>田園都市線</li>
 <li class="list-group-item"><span class="badge">13</span>目黒線</li>
 </ul>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;ul class=&quot;list-group&quot;&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;21&lt;/span&gt;東横線&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;27&lt;/span&gt;田園都市線&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;badge&quot;&gt;13&lt;/span&gt;目黒線&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-535" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -187,6 +293,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/listgroup/">リストグループ</a></li>
 </ul>
 </footer>
+<div class="well well-sm">リストグループを形成します</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <ul class="list-group">
 <li class="list-group-item">二子玉川</li>
@@ -195,6 +302,19 @@
 <li class="list-group-item">駒澤大学</li>
 <li class="list-group-item">三軒茶屋</li>
 </ul>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;ul class=&quot;list-group&quot;&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;二子玉川&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;用賀&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;桜新町&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;駒澤大学&lt;/li&gt;
+&lt;li class=&quot;list-group-item&quot;&gt;三軒茶屋&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
 </div>
 </article>
 </main>
@@ -207,7 +327,9 @@
 <ol class="list-unstyled">
 <li>bootstrap
 <ol class="list-unstyled">
-<li><a href="/_dev/bootstrap/panel/">パネル (7)</a>
+<li><a href="/_dev/bootstrap/jquery/">jQuery (11)</a>
+</li>
+<li><a href="/_dev/bootstrap/panel/">パネル (8)</a>
 </li>
 <li><a href="/_dev/bootstrap/listgroup/">リストグループ (7)</a>
 </li>
@@ -215,7 +337,7 @@
 </li>
 <li><a href="/_dev/bootstrap/progress/">プログレスバー (6)</a>
 </li>
-<li><a href="/_dev/bootstrap/alert/">アラート (1)</a>
+<li><a href="/_dev/bootstrap/alert/">アラート (2)</a>
 </li>
 <li><a href="/_dev/bootstrap/heading/">見出し (2)</a>
 </li>
@@ -229,7 +351,7 @@
 </li>
 <li><a href="/_dev/bootstrap/helper/">ヘルパー (12)</a>
 </li>
-<li><a href="/_dev/bootstrap/button/">ボタン (16)</a>
+<li><a href="/_dev/bootstrap/button/">ボタン (17)</a>
 </li>
 <li><a href="/_dev/bootstrap/cat/">フォーム (23)</a>
 </li>
@@ -248,7 +370,7 @@
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="/_dev/2018/02/">2018年2月 (147)</a></li>
+<li><a href="/_dev/2018/02/">2018年2月 (159)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
@@ -270,7 +392,11 @@
 </ul>
 <p><a href="#top">Back to top</a></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/_dev/js/jquery_min.js"></script>
 <script src="/_dev/js/bootstrap.min.js"></script>
+<script src="/_dev/js/clipboard_min.js"></script>
+<script src="/_dev/js/myscript.js"></script>
+<script type="text/javascript" src="/_dev/hljs/highlight.pack.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

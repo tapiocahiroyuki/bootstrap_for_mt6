@@ -7,6 +7,7 @@
 <meta name="description" content="アラート ">
 <link rel="stylesheet" href="/_dev/css/bootstrap.min.css">
 <link rel="stylesheet" href="/_dev/css/custom_for_mt.css">
+<link rel="stylesheet" href="/_dev/hljs/styles/atom-one-dark.css">
 <link rel="start" href="/_dev/" title="Home">
 <link rel="alternate" href="/_dev/atom.xml" type="application/atom+xml" title="Recent Entries">
 <link rel="canonical" href="/_dev/bootstrap/alert/">
@@ -52,8 +53,16 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">閉じるボタンのあるアラート。button要素に.closeを付与することで、閉じるボタンになります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good. </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;alert alert-warning alert-dismissible fade in&quot; role=&quot;alert&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;&lt;/button&gt; &lt;strong&gt;Holy guacamole!&lt;/strong&gt; Best check yo self, you&#039;re not looking too good. &lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-525" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -65,11 +74,22 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/alert/">アラート</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.alertの他、alert-[状態]を付与することで、色を設定できます。テキストリンクには.alert-linkを付与します。クローズ可能な×マークをつけるためには.alert-dismissibleを追加し、ボタンを取り付けます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="alert alert-success" role="alert"><strong>success</strong>快特　三崎口行き</div>
 <div class="alert alert-info" role="alert"><strong>info</strong><i class="glyphicon glyphicon-plane" aria-hidden="true"></i>エアポート急行　羽田空港行き乗り換えは<a href="#" class="alert-link">こちら</a></div>
 <div class="alert alert-warning" role="alert"><strong>warning</strong><i class="glyphicon glyphicon-plane" aria-hidden="true"></i>エアポート快特　羽田空港行き</div>
 <div class="alert alert-danger alert-dismissible" role="alert"><strong>danger</strong>特急　品川行き<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;&lt;strong&gt;success&lt;/strong&gt;快特　三崎口行き&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;&lt;strong&gt;info&lt;/strong&gt;&lt;i class=&quot;glyphicon glyphicon-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;エアポート急行　羽田空港行き乗り換えは&lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;こちら&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;&lt;strong&gt;warning&lt;/strong&gt;&lt;i class=&quot;glyphicon glyphicon-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;エアポート快特　羽田空港行き&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger alert-dismissible&quot; role=&quot;alert&quot;&gt;&lt;strong&gt;danger&lt;/strong&gt;特急　品川行き&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 </main>
@@ -147,7 +167,11 @@
 </ul>
 <p><a href="#top">Back to top</a></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/_dev/js/jquery_min.js"></script>
 <script src="/_dev/js/bootstrap.min.js"></script>
+<script src="/_dev/js/clipboard_min.js"></script>
+<script src="/_dev/js/myscript.js"></script>
+<script type="text/javascript" src="/_dev/hljs/highlight.pack.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

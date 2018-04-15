@@ -7,6 +7,7 @@
 <meta name="description" content="jQuery ">
 <link rel="stylesheet" href="/_dev/css/bootstrap.min.css">
 <link rel="stylesheet" href="/_dev/css/custom_for_mt.css">
+<link rel="stylesheet" href="/_dev/hljs/styles/atom-one-dark.css">
 <link rel="start" href="/_dev/" title="Home">
 <link rel="alternate" href="/_dev/atom.xml" type="application/atom+xml" title="Recent Entries">
 <link rel="canonical" href="/_dev/bootstrap/jquery/">
@@ -52,6 +53,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ボタンを押すと、へこんだ外観になり、もう一度押すと、戻に戻ります。.activeとaria-pressed属性をtrueにすると押されたままが初期状態になります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
   Single toggle
@@ -59,6 +61,18 @@
 <button type="button" class="btn btn-primary active" data-toggle="button" aria-pressed="true" autocomplete="off">
   Single toggle
 </button>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
+  Single toggle
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;true&quot; autocomplete=&quot;off&quot;&gt;
+  Single toggle
+&lt;/button&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-558" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -70,8 +84,16 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">閉じるボタンのあるアラート。button要素に.closeを付与することで、閉じるボタンになります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good. </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;alert alert-warning alert-dismissible fade in&quot; role=&quot;alert&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;&lt;/button&gt; &lt;strong&gt;Holy guacamole!&lt;/strong&gt; Best check yo self, you&#039;re not looking too good. &lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-557" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -83,6 +105,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">クリックすると吹き出しが表示されます。スクリプトを実装する必要があります。data-placement属性で吹き出しの出る方向を指示できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
   Popover on left
@@ -95,6 +118,22 @@ $(function () {
 })
 </script>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
+  Popover on left
+&lt;/button&gt;
+&lt;a tabindex=&quot;0&quot; class=&quot;btn btn-lg btn-danger&quot; role=&quot;button&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; title=&quot;Dismissible popover&quot; data-content=&quot;And here&#039;s some amazing content. It&#039;s very engaging. Right?&quot;&gt;Dismissible popover&lt;/a&gt;
+&lt;!-- Bootstrap・jQuery読み込み後に実行が必要なScript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(function () {
+  $(&#039;[data-toggle=&quot;popover&quot;]&#039;).popover()
+})
+&lt;/script&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-556" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/jquery/#000556" rel="bookmark">ツールチップ</a></h2>
@@ -105,6 +144,7 @@ $(function () {
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">jQuery・bootstrap読み込み後にツールチップ用のスクリプトを実行させ、data-toggle属性にtooltipを、titleにテキストを記載することで、マウスをかざすと吹き出しが表示されるようになります。data-placementで吹き出しの出る方向を指示できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <a href="#" data-toggle="tooltip" title="Some tooltip text!" data-placement="left">Hover over me</a>
 <!-- jQuery・bootstrap読み込み後に実行が必要なスクリプト -->
@@ -113,6 +153,19 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Some tooltip text!&quot; data-placement=&quot;left&quot;&gt;Hover over me&lt;/a&gt;
+&lt;!-- jQuery・bootstrap読み込み後に実行が必要なスクリプト --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(function () {
+  $(&#039;[data-toggle=&quot;tooltip&quot;]&#039;).tooltip()
+})
+&lt;/script&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-555" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -124,6 +177,7 @@ $(function () {
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ナビバー実装例。ナビバーで示すhref要素のidにスクロールが移動すると同時に、スクロールの位置がidの示す場所ではナビバーの項目がハイライトします。スクロール対象エリアにはposition:relativeのスタイルを設定してください。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <nav class="navbar navbar-default navbar-static" id="navbar-example2">
 <div class="container-fluid">
@@ -167,6 +221,54 @@ $(function () {
 <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats. </p>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;nav class=&quot;navbar navbar-default navbar-static&quot; id=&quot;navbar-example2&quot;&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+&lt;div class=&quot;navbar-header&quot;&gt;
+&lt;button class=&quot;collapsed navbar-toggle&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.bs-example-js-navbar-scrollspy&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;Project Name&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;collapse navbar-collapse bs-example-js-navbar-scrollspy&quot;&gt;
+&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#fat&quot;&gt;@fat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mdo&quot;&gt;@mdo&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;dropdown&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; id=&quot;navbarDrop1&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDrop1&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#one&quot;&gt;one&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#two&quot;&gt;two&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#three&quot;&gt;three&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;scrollspy-example&quot; data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example2&quot; data-offset=&quot;0&quot; style=&quot;position: relative;height: 200px;margin-top: 10px;overflow: auto;&quot;&gt;
+&lt;h4 id=&quot;fat&quot; style=&quot;&quot;&gt;@fat&lt;/h4&gt;
+&lt;p&gt;Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney&#039;s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven&#039;t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.&lt;/p&gt;
+&lt;h4 id=&quot;mdo&quot; style=&quot;&quot;&gt;@mdo&lt;/h4&gt;
+&lt;p&gt;Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney&#039;s vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney&#039;s quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.&lt;/p&gt;
+&lt;h4 id=&quot;one&quot; style=&quot;&quot;&gt;one&lt;/h4&gt;
+&lt;p&gt;Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.&lt;/p&gt;
+&lt;h4 id=&quot;two&quot; style=&quot;&quot;&gt;two&lt;/h4&gt;
+&lt;p&gt;In incididunt echo park, officia deserunt mcsweeney&#039;s proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven&#039;t heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.&lt;/p&gt;
+&lt;h4 id=&quot;three&quot; style=&quot;&quot;&gt;three&lt;/h4&gt;
+&lt;p&gt;Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney&#039;s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven&#039;t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.&lt;/p&gt;
+&lt;p&gt;Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven&#039;t heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats. &lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+</div>
 </article>
 <article id="entry-554" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/jquery/#000554" rel="bookmark">ドロップダウンの操作</a></h2>
@@ -177,6 +279,7 @@ $(function () {
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.dropdownに.openを付与することで、ドロップダウンが開いたままになります。jQueryなどで開閉を制御できます。リンクにはdata-toggle="dropdown"をつけてください。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="dropdown open">
 <a id="dLabel" href="http://example.com" data-toggle="dropdown" role="button" data-target="#" aria-haspopup="true" aria-expanded="false">
@@ -190,6 +293,23 @@ Dropdown trigger
 </ul>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;dropdown open&quot;&gt;
+&lt;a id=&quot;dLabel&quot; href=&quot;http://example.com&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; data-target=&quot;#&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+Dropdown trigger
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;湘南新宿ライン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;埼京線&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;山手線&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-553" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/jquery/#000553" rel="bookmark">押したボタンによって内容が差し替わるモーダル</a></h2>
@@ -200,6 +320,7 @@ Dropdown trigger
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">jQueryによりモーダルの中身を差し替えます。ここでは.data-whatever属性の値をモーダルのinput要素に書き込んで表示させます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="だるい">モーダルいの...</button>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="シフト">モーダルシフト</button>
@@ -234,6 +355,44 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 })
 </script>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;だるい&quot;&gt;モーダルいの...&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;シフト&quot;&gt;モーダルシフト&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#exampleModal&quot; data-whatever=&quot;ヨガファイア&quot;&gt;モーダルシム&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div id=&quot;exampleModal&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
+&lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+&lt;div class=&quot;modal-content&quot;&gt;
+&lt;div class=&quot;modal-header&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+&lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;内容が変化するモーダル&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&quot;modal-body&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;recipient-name&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;modal-footer&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;閉める&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;セーブ&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+&lt;!-- Script （jQueryとbootstrapの後に読み込ませていないのでここでは動作しません）--&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(&#039;#exampleModal&#039;).on(&#039;show.bs.modal&#039;, function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data(&#039;whatever&#039;) // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal&#039;s content. We&#039;ll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find(&#039;.modal-body input&#039;).val(recipient)
+})
+&lt;/script&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-552" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/jquery/#000552" rel="bookmark">フェードしないモーダル</a></h2>
@@ -244,6 +403,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">フェードしないモーダル。div.modalについている.fadeを取り除きます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalInstant">
@@ -268,6 +428,34 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModalInstant&quot;&gt;
+一瞬で表示されるモーダル
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal&quot; id=&quot;myModalInstant&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabelInstant&quot;&gt;
+&lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+&lt;div class=&quot;modal-content&quot;&gt;
+&lt;div class=&quot;modal-header&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+&lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabelInstant&quot;&gt;モーダル#myModalInstant&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&quot;modal-body&quot;&gt;
+モーダルいの...
+&lt;/div&gt;
+&lt;div class=&quot;modal-footer&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;閉める&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;セーブ&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-551" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/jquery/#000551" rel="bookmark">小モーダル</a></h2>
@@ -278,6 +466,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.modal-dialogに .modal-smを付与すると、小さなモーダルになります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModalSmall">
@@ -302,6 +491,34 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModalSmall&quot;&gt;
+小モーダル
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div id=&quot;myModalSmall&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
+&lt;div class=&quot;modal-dialog modal-sm&quot; role=&quot;document&quot;&gt;
+&lt;div class=&quot;modal-content&quot;&gt;
+&lt;div class=&quot;modal-header&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+&lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;モーダル#myModalSmall&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&quot;modal-body&quot;&gt;
+モーダルいの...
+&lt;/div&gt;
+&lt;div class=&quot;modal-footer&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;閉める&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;セーブ&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-550" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/jquery/#000550" rel="bookmark">大モーダル</a></h2>
@@ -312,6 +529,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/jquery/">jQuery</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.modal-dialogに .modal-lgを付与すると、大きなモーダルになります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalLarge">
@@ -335,6 +553,34 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModalLarge&quot;&gt;
+大モーダル
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div id=&quot;myModalLarge&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myLargeModalLabel&quot;&gt;
+&lt;div class=&quot;modal-dialog modal-lg&quot; role=&quot;document&quot;&gt;
+&lt;div class=&quot;modal-content&quot;&gt;
+&lt;div class=&quot;modal-header&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+&lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;モーダル#myModalLarge&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&quot;modal-body&quot;&gt;
+モーダルいの...
+&lt;/div&gt;
+&lt;div class=&quot;modal-footer&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;閉める&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;セーブ&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+&lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;</code>
+</pre>
 </div>
 </article>
 <ul class="pager">
@@ -415,7 +661,11 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </ul>
 <p><a href="#top">Back to top</a></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/_dev/js/jquery_min.js"></script>
 <script src="/_dev/js/bootstrap.min.js"></script>
+<script src="/_dev/js/clipboard_min.js"></script>
+<script src="/_dev/js/myscript.js"></script>
+<script type="text/javascript" src="/_dev/hljs/highlight.pack.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

@@ -7,6 +7,7 @@
 <meta name="description" content="ヘルパー ">
 <link rel="stylesheet" href="/_dev/css/bootstrap.min.css">
 <link rel="stylesheet" href="/_dev/css/custom_for_mt.css">
+<link rel="stylesheet" href="/_dev/hljs/styles/atom-one-dark.css">
 <link rel="start" href="/_dev/" title="Home">
 <link rel="alternate" href="/_dev/atom.xml" type="application/atom+xml" title="Recent Entries">
 <link rel="canonical" href="/_dev/bootstrap/helper/">
@@ -52,6 +53,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">特定の画面の横幅で表示されるようにするには、.visible-[横幅]-[表示方法]で指定します。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="row">
 <div class="visible-xs-block col-xs-12 bg-primary">xsで表示-block</div>
@@ -72,6 +74,30 @@
 <div class="visible-lg-inline-block col-xs-12 bg-danger">lgで表示-inline-block</div>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;visible-xs-block col-xs-12 bg-primary&quot;&gt;xsで表示-block&lt;/div&gt;
+&lt;div class=&quot;visible-sm-block col-xs-12 bg-danger&quot;&gt;smで表示-block&lt;/div&gt;
+&lt;div class=&quot;visible-md-block col-xs-12 bg-warning&quot;&gt;mdで表示-block&lt;/div&gt;
+&lt;div class=&quot;visible-lg-block col-xs-12 bg-danger&quot;&gt;lgで表示-block&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;visible-xs-inline col-xs-12 bg-primary&quot;&gt;xsで表示-inline&lt;/div&gt;
+&lt;div class=&quot;visible-sm-inline col-xs-12 bg-danger&quot;&gt;smで表示-inline&lt;/div&gt;
+&lt;div class=&quot;visible-md-inline col-xs-12 bg-warning&quot;&gt;mdで表示-inline&lt;/div&gt;
+&lt;div class=&quot;visible-lg-inline col-xs-12 bg-danger&quot;&gt;lgで表示-inline&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;visible-xs-inline-block col-xs-12 bg-primary&quot;&gt;xsで表示-inline-block&lt;/div&gt;
+&lt;div class=&quot;visible-sm-inline-block col-xs-12 bg-danger&quot;&gt;smで表示-inline-block&lt;/div&gt;
+&lt;div class=&quot;visible-md-inline-block col-xs-12 bg-warning&quot;&gt;mdで表示-inline-block&lt;/div&gt;
+&lt;div class=&quot;visible-lg-inline-block col-xs-12 bg-danger&quot;&gt;lgで表示-inline-block&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-474" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/helper/#000474" rel="bookmark">画面横幅によって非表示になる要素</a></h2>
@@ -82,6 +108,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.hidden-[画面の幅]を付与することにより、画面の横幅が特定の範囲の場合非表示となります。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="row">
 <div class="hidden-xs col-xs-12 bg-primary">xsで非表示</div>
@@ -89,6 +116,19 @@
 <div class="hidden-md col-xs-12 bg-warning">mdで非表示</div>
 <div class="hidden-lg col-xs-12 bg-danger">lgで非表示</div>
 </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;hidden-xs col-xs-12 bg-primary&quot;&gt;xsで非表示&lt;/div&gt;
+&lt;div class=&quot;hidden-sm col-xs-12 bg-danger&quot;&gt;smで非表示&lt;/div&gt;
+&lt;div class=&quot;hidden-md col-xs-12 bg-warning&quot;&gt;mdで非表示&lt;/div&gt;
+&lt;div class=&quot;hidden-lg col-xs-12 bg-danger&quot;&gt;lgで非表示&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
 </div>
 </article>
 <article id="entry-473" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -100,11 +140,23 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.text-hideクラスまたはミックスインを利用して、要素のテキストコンテンツを背景イメージに置き換えるのに役立ちます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div>
 <h3 class="text-hide">いまなら300名様へ300ポイントプレゼント</h3>
 <p><img src="http://placehold.it/800x180" alt="" class="img-responsive"></p>
 </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div&gt;
+&lt;h3 class=&quot;text-hide&quot;&gt;いまなら300名様へ300ポイントプレゼント&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x180&quot; alt=&quot;&quot; class=&quot;img-responsive&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
 </div>
 </article>
 <article id="entry-472" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -116,9 +168,18 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">アクセシビリティに配慮し、スクリーンリーダーで読み上げられ、キーボードナビゲーションでは有効な要素になります。スクリーンリーダー以外では非表示です。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <p class="sr-only">トイレは30メートル先にあります。</p>
 <a href="#" class="sr-only sr-only-focusable">音声案内を聞きます</a>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;p class=&quot;sr-only&quot;&gt;トイレは30メートル先にあります。&lt;/p&gt;
+&lt;a href=&quot;#&quot; class=&quot;sr-only sr-only-focusable&quot;&gt;音声案内を聞きます&lt;/a&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-471" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -130,6 +191,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.showで表示、.hiddenで非表示とします。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <h4>急行の停車駅</h4>
 <div class="show">渋谷</div>
@@ -137,6 +199,18 @@
 <div class="show">中目黒</div>
 <div class="hidden">祐天寺</div>
 <div class="show">学芸大学</div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;h4&gt;急行の停車駅&lt;/h4&gt;
+&lt;div class=&quot;show&quot;&gt;渋谷&lt;/div&gt;
+&lt;div class=&quot;hidden&quot;&gt;代官山&lt;/div&gt;
+&lt;div class=&quot;show&quot;&gt;中目黒&lt;/div&gt;
+&lt;div class=&quot;hidden&quot;&gt;祐天寺&lt;/div&gt;
+&lt;div class=&quot;show&quot;&gt;学芸大学&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-470" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -148,12 +222,24 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">強制的にクリアフィックスを行います。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="clearfix">
 <div class= "pull-right" ><img src="http://placehold.it/250x250" alt=""></div>
 <p>「こいつはどうだ、やつぱり世の中はうまくできてるねえ、けふ一日なんぎしたけれど、こんどはこんないゝこともある。このうちは料理店だけれどもたゞでご馳走するんだぜ。」</p>
 </div>
 <a href="#" class="btn btn-danger">今すぐエントリー</a>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;clearfix&quot;&gt;
+&lt;div class= &quot;pull-right&quot; &gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+&lt;p&gt;「こいつはどうだ、やつぱり世の中はうまくできてるねえ、けふ一日なんぎしたけれど、こんどはこんないゝこともある。このうちは料理店だけれどもたゞでご馳走するんだぜ。」&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-danger&quot;&gt;今すぐエントリー&lt;/a&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-469" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -165,8 +251,17 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ブロック要素にし、左右自動マージンを設定します。例ではわかりやすいよう、センタリングしています。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class= "center-block text-center"><img src="http://placehold.it/250x250" alt=""></div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class= &quot;center-block text-center&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+</code>
+</pre>
 </div>
 </article>
 <article id="entry-468" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -178,9 +273,18 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">強制的に左・右へフロートさせます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class= "pull-left" ><img src="http://placehold.it/200x200" alt=""></div>
 <div class= "pull-right" ><img src="http://placehold.it/250x250" alt=""></div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class= &quot;pull-left&quot; &gt;&lt;img src=&quot;http://placehold.it/200x200&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+&lt;div class= &quot;pull-right&quot; &gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;&quot;&gt;&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-467" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -192,8 +296,16 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">キャレットです。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <span class="caret"></span>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-466" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -205,8 +317,16 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/helper/">ヘルパー</a></li>
 </ul>
 </footer>
+<div class="well well-sm">閉じるアイコンです。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;button type=&quot;button&quot; class=&quot;close&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;</code>
+</pre>
 </div>
 </article>
 <ul class="pager">
@@ -222,7 +342,23 @@
 <ol class="list-unstyled">
 <li>bootstrap
 <ol class="list-unstyled">
-<li><a href="/_dev/bootstrap/nav/">ナビゲーション (12)</a>
+<li><a href="/_dev/bootstrap/jquery/">jQuery (11)</a>
+</li>
+<li><a href="/_dev/bootstrap/panel/">パネル (8)</a>
+</li>
+<li><a href="/_dev/bootstrap/listgroup/">リストグループ (7)</a>
+</li>
+<li><a href="/_dev/bootstrap/media/">メディアオブジェクト (3)</a>
+</li>
+<li><a href="/_dev/bootstrap/progress/">プログレスバー (6)</a>
+</li>
+<li><a href="/_dev/bootstrap/alert/">アラート (2)</a>
+</li>
+<li><a href="/_dev/bootstrap/heading/">見出し (2)</a>
+</li>
+<li><a href="/_dev/bootstrap/label/">ラベル (4)</a>
+</li>
+<li><a href="/_dev/bootstrap/nav/">ナビゲーション (18)</a>
 </li>
 <li><a href="/_dev/bootstrap/dropdown/">ドロップダウン (9)</a>
 </li>
@@ -230,7 +366,7 @@
 </li>
 <li><a href="/_dev/bootstrap/helper/">ヘルパー (12)</a>
 </li>
-<li><a href="/_dev/bootstrap/button/">ボタン (16)</a>
+<li><a href="/_dev/bootstrap/button/">ボタン (17)</a>
 </li>
 <li><a href="/_dev/bootstrap/cat/">フォーム (23)</a>
 </li>
@@ -238,7 +374,7 @@
 </li>
 <li><a href="/_dev/bootstrap/text/">テキスト (25)</a>
 </li>
-<li><a href="/_dev/bootstrap/img/" title="画像に関するモジュールです。">画像 (2)</a>
+<li><a href="/_dev/bootstrap/img/" title="画像に関するモジュールです。">画像 (4)</a>
 </li>
 <li><a href="/_dev/bootstrap/gridsystem/" title="グリッドシステム。ボックスにbg-色のクラスを適用して着色しています。取り除いてから使用してください。">グリッドシステム (8)</a>
 </li>
@@ -249,7 +385,7 @@
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="/_dev/2018/02/">2018年2月 (111)</a></li>
+<li><a href="/_dev/2018/02/">2018年2月 (159)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
@@ -271,7 +407,11 @@
 </ul>
 <p><a href="#top">Back to top</a></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/_dev/js/jquery_min.js"></script>
 <script src="/_dev/js/bootstrap.min.js"></script>
+<script src="/_dev/js/clipboard_min.js"></script>
+<script src="/_dev/js/myscript.js"></script>
+<script type="text/javascript" src="/_dev/hljs/highlight.pack.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

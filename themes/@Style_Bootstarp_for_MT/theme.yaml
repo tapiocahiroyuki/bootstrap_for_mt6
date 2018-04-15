@@ -48,6 +48,10 @@ elements:
             label: JavaScript
             outfile: js/mt.js
             rebuild_me: 1
+          jquery_min:
+            label: jQuery
+            outfile: js/jquery_min.js
+            rebuild_me: 1
           main_index:
             label: メインページ
             outfile: index.html
@@ -59,6 +63,10 @@ elements:
           bootstrap_min_js:
             label: bootstrap_min_js
             outfile: js/bootstrap.min.js
+            rebuild_me: 1
+          clipboard_min:
+            label: clipboard_min_js
+            outfile: js/clipboard_min.js
             rebuild_me: 1
           custom_for_mt_css:
             label: custom_for_mt_css

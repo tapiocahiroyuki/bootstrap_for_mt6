@@ -7,6 +7,7 @@
 <meta name="description" content="フォーム ">
 <link rel="stylesheet" href="/_dev/css/bootstrap.min.css">
 <link rel="stylesheet" href="/_dev/css/custom_for_mt.css">
+<link rel="stylesheet" href="/_dev/hljs/styles/atom-one-dark.css">
 <link rel="start" href="/_dev/" title="Home">
 <link rel="alternate" href="/_dev/atom.xml" type="application/atom+xml" title="Recent Entries">
 <link rel="canonical" href="/_dev/bootstrap/cat/">
@@ -52,6 +53,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.input-group-btnにより、複数のボタンを配置できます</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="input-group">
 <div class="input-group-btn">
@@ -60,6 +62,19 @@
 </div>
 <input type="text" class="form-control" aria-label="...">
 </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;input-group&quot;&gt;
+&lt;div class=&quot;input-group-btn&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東急&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;東横線&lt;/button&gt;
+&lt;/div&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <article id="entry-497" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
@@ -71,6 +86,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">入力フォームにボタングループも入れられます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="input-group">
 <div class="input-group-btn">
@@ -90,6 +106,29 @@
 <input type="text" class="form-control" aria-label="...">
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;input-group&quot;&gt;
+&lt;div class=&quot;input-group-btn&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;原宿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;代々木&lt;/a&gt;&lt;/li&gt;
+&lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新宿&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-496" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000496" rel="bookmark">ドロップダウン付きテキストボックス</a></h2>
@@ -100,6 +139,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">フォームにドロップダウンも追加できます</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="row">
 <div class="col-lg-6">
@@ -130,6 +170,40 @@
 </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-lg-6&quot;&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;div class=&quot;input-group-btn&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;井の頭線&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;神泉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;駒場東大前&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+&lt;/div&gt;&lt;!-- /input-group --&gt;
+&lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
+&lt;div class=&quot;col-lg-6&quot;&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+&lt;div class=&quot;input-group-btn&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;井の頭線&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;渋谷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;神泉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;駒場東大前&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /btn-group --&gt;
+&lt;/div&gt;&lt;!-- /input-group --&gt;
+&lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
+&lt;/div&gt;&lt;!-- /.row --&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-494" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000494" rel="bookmark">ラジオボタン／チェックボックス付き</a></h2>
@@ -140,6 +214,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">テキストボックスにチェックボックスまたはラジオボタンを配置します。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="row">
 <div class="col-lg-6">
@@ -160,6 +235,30 @@
 </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-lg-6&quot;&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot;&gt;
+&lt;input type=&quot;checkbox&quot; aria-label=&quot;...&quot;&gt;
+&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+&lt;/div&gt;&lt;!-- /input-group --&gt;
+&lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
+&lt;div class=&quot;col-lg-6&quot;&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot;&gt;
+&lt;input type=&quot;radio&quot; aria-label=&quot;...&quot;&gt;
+&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;...&quot;&gt;
+&lt;/div&gt;&lt;!-- /input-group --&gt;
+&lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
+&lt;/div&gt;&lt;!-- /.row --&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-493" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000493" rel="bookmark">大きさ調整</a></h2>
@@ -170,6 +269,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.input-groupと一緒にサイズの指定のクラスを付与できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="input-group input-group-lg">
 <span class="input-group-addon" id="sizing-addon1">@</span>
@@ -184,6 +284,24 @@
 <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;input-group input-group-lg&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;sizing-addon1&quot;&gt;@&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;sizing-addon1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;sizing-addon2&quot;&gt;@&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;sizing-addon2&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group input-group-sm&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;sizing-addon3&quot;&gt;@&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;sizing-addon3&quot;&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-492" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000492" rel="bookmark">グループ</a></h2>
@@ -194,6 +312,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">input要素にテキストやボタンを追加して、グループにできます。textareaやselect要素には使えません。label要素やaria-label系の属性を使用し、スクリーンリーダーへ配慮してください。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="input-group">
 <span class="input-group-addon" id="basic-addon1">@</span>
@@ -214,6 +333,30 @@
 <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient&#039;s username&quot; aria-describedby=&quot;basic-addon2&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot;&gt;$&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Amount (to the nearest dollar)&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot;&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+&lt;label for=&quot;basic-url&quot;&gt;Your vanity URL&lt;/label&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;basic-url&quot; aria-describedby=&quot;basic-addon3&quot;&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-456" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000456" rel="bookmark">グリッドデザインに沿ったフォーム</a></h2>
@@ -224,6 +367,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">フォームにもグリッドデザインを適用できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="row">
 <div class="col-xs-2">
@@ -237,6 +381,23 @@
 </div>
 </div>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-xs-2&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-2&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-3&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-3&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-4&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-455" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000455" rel="bookmark">左側に配置するラベルの大きさ調整</a></h2>
@@ -247,6 +408,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.form-horizontalの場合、.form-groupと一緒にラベルの大きさを.form-group-lg .form-group-smで調整します</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <form class="form-horizontal">
 <div class="form-group form-group-lg">
@@ -263,6 +425,26 @@
 </div>
 </form>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;form class=&quot;form-horizontal&quot;&gt;
+&lt;div class=&quot;form-group form-group-lg&quot;&gt;
+&lt;label class=&quot;col-sm-2 control-label&quot; for=&quot;formGroupInputLarge&quot;&gt;ラベル大&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;formGroupInputLarge&quot; placeholder=&quot;Large input&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group form-group-sm&quot;&gt;
+&lt;label class=&quot;col-sm-2 control-label&quot; for=&quot;formGroupInputSmall&quot;&gt;ラベル小&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;formGroupInputSmall&quot; placeholder=&quot;Small input&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-454" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000454" rel="bookmark">サイズ調整</a></h2>
@@ -273,6 +455,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">.input-sm、.input-lgでテキストボックスなどの大きさを調整できます。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <form class="form-horizontal">
 <div class="form-group">
@@ -321,6 +504,58 @@
 </div>
 </form>
 </div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;form class=&quot;form-horizontal&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputEmailA1&quot; class=&quot;col-sm-2 control-label&quot;&gt;大&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control input-lg&quot; id=&quot;inputEmailA1&quot; placeholder=&quot;.input-lg&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputEmailA2&quot; class=&quot;col-sm-2 control-label&quot;&gt;中&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputEmailA2&quot; placeholder=&quot;Default input&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;inputEmailA3&quot; class=&quot;col-sm-2 control-label&quot;&gt;小&lt;/label&gt;
+&lt;div class=&quot;col-sm-10&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputEmailA3&quot; placeholder=&quot;.input-sm&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;form class=&quot;form-inline&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;exampleInputNameA4&quot;&gt;大&lt;/label&gt;
+&lt;select class=&quot;form-control input-lg&quot;&gt;
+&lt;option&gt;大井町&lt;/option&gt;
+&lt;option&gt;下神明&lt;/option&gt;
+&lt;option&gt;戸越公園&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;exampleInputNameA5&quot;&gt;中&lt;/label&gt;
+&lt;select class=&quot;form-control&quot;&gt;
+&lt;option&gt;中目黒&lt;/option&gt;
+&lt;option&gt;代官山&lt;/option&gt;
+&lt;option&gt;渋谷&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;exampleInputNameA6&quot;&gt;小&lt;/label&gt;
+&lt;select class=&quot;form-control input-sm&quot;&gt;
+&lt;option&gt;小竹向原&lt;/option&gt;
+&lt;option&gt;千川&lt;/option&gt;
+&lt;option&gt;要町&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code>
+</pre>
+</div>
 </article>
 <article id="entry-453" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="/_dev/bootstrap/cat/#000453" rel="bookmark">ラベルが隠しテキストのアイコン付きフォーム</a></h2>
@@ -331,6 +566,7 @@
 <li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="/_dev/bootstrap/cat/">フォーム</a></li>
 </ul>
 </footer>
+<div class="well well-sm">ラベルがないフォームでも、label.sr-onlyでラベル名を読み上げられるようにしてください。</div>
 <div class="asset-body e-content" itemprop="articleBody">
 <div class="form-group has-success has-feedback">
 <label class="control-label sr-only" for="inputSuccess5">快特の停車駅を入力</label>
@@ -338,6 +574,18 @@
 <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
 <span id="inputSuccess5Status" class="sr-only">(success)</span>
 </div>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html">&lt;div class=&quot;form-group has-success has-feedback&quot;&gt;
+&lt;label class=&quot;control-label sr-only&quot; for=&quot;inputSuccess5&quot;&gt;快特の停車駅を入力&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputSuccess5&quot; aria-describedby=&quot;inputSuccess5Status&quot;&gt;
+&lt;span class=&quot;glyphicon glyphicon-ok form-control-feedback&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;span id=&quot;inputSuccess5Status&quot; class=&quot;sr-only&quot;&gt;(success)&lt;/span&gt;
+&lt;/div&gt;</code>
+</pre>
 </div>
 </article>
 <ul class="pager">
@@ -353,7 +601,23 @@
 <ol class="list-unstyled">
 <li>bootstrap
 <ol class="list-unstyled">
-<li><a href="/_dev/bootstrap/nav/">ナビゲーション (12)</a>
+<li><a href="/_dev/bootstrap/jquery/">jQuery (11)</a>
+</li>
+<li><a href="/_dev/bootstrap/panel/">パネル (8)</a>
+</li>
+<li><a href="/_dev/bootstrap/listgroup/">リストグループ (7)</a>
+</li>
+<li><a href="/_dev/bootstrap/media/">メディアオブジェクト (3)</a>
+</li>
+<li><a href="/_dev/bootstrap/progress/">プログレスバー (6)</a>
+</li>
+<li><a href="/_dev/bootstrap/alert/">アラート (2)</a>
+</li>
+<li><a href="/_dev/bootstrap/heading/">見出し (2)</a>
+</li>
+<li><a href="/_dev/bootstrap/label/">ラベル (4)</a>
+</li>
+<li><a href="/_dev/bootstrap/nav/">ナビゲーション (18)</a>
 </li>
 <li><a href="/_dev/bootstrap/dropdown/">ドロップダウン (9)</a>
 </li>
@@ -361,7 +625,7 @@
 </li>
 <li><a href="/_dev/bootstrap/helper/">ヘルパー (12)</a>
 </li>
-<li><a href="/_dev/bootstrap/button/">ボタン (16)</a>
+<li><a href="/_dev/bootstrap/button/">ボタン (17)</a>
 </li>
 <li><a href="/_dev/bootstrap/cat/">フォーム (23)</a>
 </li>
@@ -369,7 +633,7 @@
 </li>
 <li><a href="/_dev/bootstrap/text/">テキスト (25)</a>
 </li>
-<li><a href="/_dev/bootstrap/img/" title="画像に関するモジュールです。">画像 (2)</a>
+<li><a href="/_dev/bootstrap/img/" title="画像に関するモジュールです。">画像 (4)</a>
 </li>
 <li><a href="/_dev/bootstrap/gridsystem/" title="グリッドシステム。ボックスにbg-色のクラスを適用して着色しています。取り除いてから使用してください。">グリッドシステム (8)</a>
 </li>
@@ -380,7 +644,7 @@
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="/_dev/2018/02/">2018年2月 (111)</a></li>
+<li><a href="/_dev/2018/02/">2018年2月 (159)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
@@ -402,7 +666,11 @@
 </ul>
 <p><a href="#top">Back to top</a></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/_dev/js/jquery_min.js"></script>
 <script src="/_dev/js/bootstrap.min.js"></script>
+<script src="/_dev/js/clipboard_min.js"></script>
+<script src="/_dev/js/myscript.js"></script>
+<script type="text/javascript" src="/_dev/hljs/highlight.pack.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
