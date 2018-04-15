@@ -15,9 +15,20 @@
 </ul>
 </footer>
 
+<mt:If tag="EntryExcerpt">
+<div class="well well-sm"><$mt:EntryExcerpt$></div>
+</mt:If>
+
 <mt:If tag="EntryBody">
 <div class="asset-body e-content" itemprop="articleBody">
 <$mt:EntryBody replace="<br />","<br>" regex_replace="/<img([^>]+) \/>/g","<img$1>"$>
+</div>
+<hr>
+<div class="rm-code highlight">
+<pre>
+<button class="btn clip" data-toggle="tooltip" title="コピーしました!"><i class="glyphicon glyphicon-paperclip" aria-hidden="true"></i><span class="sr-only">クリップボードへコピー</span></button>
+<code class="html"><$mt:EntryBody replace="<br />","<br>" regex_replace="/<img([^>]+) \/>/g","<img$1>" encode_html="1"$></code>
+</pre>
 </div>
 </mt:If>
 
